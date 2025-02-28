@@ -9,9 +9,13 @@
       <router-link to="/physique">🔬 Physique</router-link>
       <router-link to="/histoire">🏛 Histoire</router-link>
     </div>
-
+<br><br>
     <!-- Formulaire d'ajout de cours -->
-    <h2>➕ Ajouter un nouveau cours</h2>
+<h3>
+    ➕ Ajouter un nouveau cours
+</h3>
+<br/> 
+
     <form @submit.prevent="ajouterCours" class="form-ajout">
       <input v-model="nouveauCours.titre" type="text" placeholder="Titre du cours" required />
       <textarea v-model="nouveauCours.contenu" placeholder="Contenu du cours" required></textarea>
@@ -71,6 +75,7 @@ export default {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
+    gap: 15px;
   
 }
 
